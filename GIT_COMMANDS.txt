@@ -1,0 +1,208 @@
+https://github.com/Ai-TechNov/Aws-Class-Notes/tree/main/Tasks
+
+
+
+Basic Commands
+
+git init – Initialize a new Git repository.
+git clone <repo> – Clone a repository.
+git status – Check the status of the working directory and staging area.
+git add <file> – Stage changes to a file.
+git add . – Stage all changes in the current directory.
+git commit -m "<message>" – Commit changes with a message.
+git commit -a -m "<message>" – Commit all changes with a message.
+git branch – List all branches.
+git branch <branch-name> – Create a new branch.
+git checkout <branch-name> – Switch to a branch.
+
+Branching and Merging
+
+git checkout -b <branch-name> – Create and switch to a new branch.
+git merge <branch-name> – Merge another branch into the current branch.
+git branch -d <branch-name> – Delete a branch.
+git branch -D <branch-name> – Force delete a branch.
+git log --oneline --graph – Visualize the branch history.
+git rebase <branch-name> – Rebase onto another branch.
+git cherry-pick <commit-hash> – Apply changes from a specific commit.
+git stash – Save uncommitted changes temporarily.
+git stash apply – Reapply stashed changes.
+git stash pop – Reapply and remove stashed changes.
+
+Remote Commands
+
+git remote – List remote repositories.
+git remote add <name> <url> – Add a remote repository.
+git remote remove <name> – Remove a remote repository.
+git fetch – Fetch changes from a remote repository.
+git pull – Fetch and merge changes from a remote branch.
+git push – Push changes to a remote repository.
+git push -u origin <branch-name> – Push and set upstream branch.
+git push --force – Force push changes to a remote branch.
+git push origin --delete <branch-name> – Delete a remote branch.
+git remote -v – Show remote repository URLs.
+
+Viewing History and Logs
+
+git log – View commit history.
+git log --oneline – View concise commit history.
+git log --stat – View changes stats for each commit.
+git log -p – View commit history with detailed changes.
+git diff – Show changes between working directory and index.
+git diff --staged – Show changes between index and last commit.
+git blame <file> – Show commit history for a specific file.
+git show <commit-hash> – Show details of a specific commit.
+git reflog – Show a log of reference updates.
+git log --author=<name> – Filter commits by author.
+
+Tagging
+
+git tag – List all tags.
+git tag <tag-name> – Create a lightweight tag.
+git tag -a <tag-name> -m "<message>" – Create an annotated tag.
+git tag -d <tag-name> – Delete a tag locally.
+git push origin <tag-name> – Push a tag to a remote repository.
+git push origin --tags – Push all tags to a remote repository.
+git show <tag-name> – View details of a tag.
+git checkout <tag-name> – Checkout a specific tag.
+git fetch --tags – Fetch all tags from a remote repository.
+git tag -l "<pattern>" – List tags matching a pattern.
+
+Undoing Changes
+
+git reset <file> – Unstage a file.
+git reset --hard – Reset working directory and staging area to last commit.
+git reset --soft <commit> – Reset HEAD but keep changes in staging area.
+git reset HEAD~1 – Undo the last commit, keeping changes.
+git revert <commit> – Create a new commit to reverse a previous one.
+git clean -f – Remove untracked files.
+git checkout <file> – Discard changes in a file.
+git stash drop – Delete a specific stash.
+git cherry-pick -n <commit> – Cherry-pick without committing.
+git reset --mixed – Reset index but not working directory.
+
+Configuration
+
+git config --global user.name "<name>" – Set global username.
+git config --global user.email "<email>" – Set global email.
+git config --list – List Git configuration settings.
+git config --global alias.<alias-name> <command> – Create an alias for a Git command.
+git config --global core.editor <editor> – Set default editor for Git.
+git config --global color.ui auto – Enable colored output.
+git config --system – Set system-wide configuration.
+git config --unset <key> – Remove a specific configuration.
+git config --global merge.tool <tool> – Set merge tool.
+git config --global init.defaultBranch <branch> – Set default branch name.
+
+Advanced Usage
+
+git archive <branch-name> – Create an archive of files in a branch.
+git bisect – Perform binary search to find a bad commit.
+git submodule add <repo> – Add a submodule.
+git submodule update – Update submodules.
+git rev-parse HEAD – Get the hash of the latest commit.
+git shortlog – Summarize commit history.
+git grep <pattern> – Search for a string in repository files.
+git bundle create <file> <branch> – Create a bundle of a branch.
+git fsck – Check repository for errors.
+git describe – Describe a commit using tags.Basic Commands
+git init – Initialize a new Git repository.
+git clone <repo> – Clone a repository.
+git status – Check the status of the working directory and staging area.
+git add <file> – Stage changes to a file.
+git add . – Stage all changes in the current directory.
+git commit -m "<message>" – Commit changes with a message.
+git commit -a -m "<message>" – Commit all changes with a message.
+git branch – List all branches.
+git branch <branch-name> – Create a new branch.
+git checkout <branch-name> – Switch to a branch.
+
+Branching and Merging
+
+git checkout -b <branch-name> – Create and switch to a new branch.
+git merge <branch-name> – Merge another branch into the current branch.
+git branch -d <branch-name> – Delete a branch.
+git branch -D <branch-name> – Force delete a branch.
+git log --oneline --graph – Visualize the branch history.
+git rebase <branch-name> – Rebase onto another branch.
+git cherry-pick <commit-hash> – Apply changes from a specific commit.
+git stash – Save uncommitted changes temporarily.
+git stash apply – Reapply stashed changes.
+git stash pop – Reapply and remove stashed changes.
+
+Remote Commands
+
+git remote – List remote repositories.
+git remote add <name> <url> – Add a remote repository.
+git remote remove <name> – Remove a remote repository.
+git fetch – Fetch changes from a remote repository.
+git pull – Fetch and merge changes from a remote branch.
+git push – Push changes to a remote repository.
+git push -u origin <branch-name> – Push and set upstream branch.
+git push --force – Force push changes to a remote branch.
+git push origin --delete <branch-name> – Delete a remote branch.
+git remote -v – Show remote repository URLs.
+
+Viewing History and Logs
+
+git log – View commit history.
+git log --oneline – View concise commit history.
+git log --stat – View changes stats for each commit.
+git log -p – View commit history with detailed changes.
+git diff – Show changes between working directory and index.
+git diff --staged – Show changes between index and last commit.
+git blame <file> – Show commit history for a specific file.
+git show <commit-hash> – Show details of a specific commit.
+git reflog – Show a log of reference updates.
+git log --author=<name> – Filter commits by author.
+
+Tagging
+
+git tag – List all tags.
+git tag <tag-name> – Create a lightweight tag.
+git tag -a <tag-name> -m "<message>" – Create an annotated tag.
+git tag -d <tag-name> – Delete a tag locally.
+git push origin <tag-name> – Push a tag to a remote repository.
+git push origin --tags – Push all tags to a remote repository.
+git show <tag-name> – View details of a tag.
+git checkout <tag-name> – Checkout a specific tag.
+git fetch --tags – Fetch all tags from a remote repository.
+git tag -l "<pattern>" – List tags matching a pattern.
+
+Undoing Changes
+
+git reset <file> – Unstage a file.
+git reset --hard – Reset working directory and staging area to last commit.
+git reset --soft <commit> – Reset HEAD but keep changes in staging area.
+git reset HEAD~1 – Undo the last commit, keeping changes.
+git revert <commit> – Create a new commit to reverse a previous one.
+git clean -f – Remove untracked files.
+git checkout <file> – Discard changes in a file.
+git stash drop – Delete a specific stash.
+git cherry-pick -n <commit> – Cherry-pick without committing.
+git reset --mixed – Reset index but not working directory.
+
+Configuration
+
+git config --global user.name "<name>" – Set global username.
+git config --global user.email "<email>" – Set global email.
+git config --list – List Git configuration settings.
+git config --global alias.<alias-name> <command> – Create an alias for a Git command.
+git config --global core.editor <editor> – Set default editor for Git.
+git config --global color.ui auto – Enable colored output.
+git config --system – Set system-wide configuration.
+git config --unset <key> – Remove a specific configuration.
+git config --global merge.tool <tool> – Set merge tool.
+git config --global init.defaultBranch <branch> – Set default branch name.
+
+Advanced Usage
+
+git archive <branch-name> – Create an archive of files in a branch.
+git bisect – Perform binary search to find a bad commit.
+git submodule add <repo> – Add a submodule.
+git submodule update – Update submodules.
+git rev-parse HEAD – Get the hash of the latest commit.
+git shortlog – Summarize commit history.
+git grep <pattern> – Search for a string in repository files.
+git bundle create <file> <branch> – Create a bundle of a branch.
+git fsck – Check repository for errors.
+git describe – Describe a commit using tags.
